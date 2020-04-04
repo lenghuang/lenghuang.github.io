@@ -41,13 +41,13 @@ function TopLine() {
           Links:{" "}
         </span>
         <a href="https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len%20Resume.pdf?alt=media&token=097ea47e-1b56-4fa7-8887-740d5e922d8c">
-          <img src={res} alt="resume" className="icon-resume" />
+          <img src={res} alt="resume" className="icon-top" />
         </a>
         <a href="https://github.com/lenghuang">
-          <img src={git} alt="gitlink" className="icon-git" />
+          <img src={git} alt="gitlink" className="icon-top" />
         </a>
         <a href="https://www.linkedin.com/in/len-huang-622403178/">
-          <img src={linked} alt="linkedinlink" className="icon-linkedin" />
+          <img src={linked} alt="linkedinlink" className="icon-top" />
         </a>
       </div>
     </div>

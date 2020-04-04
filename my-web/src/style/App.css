@@ -6,11 +6,6 @@
   height: 40vmin;
   pointer-events: none;
 }
-.body {
-  text-align: center;
-  overflow: hidden;
-}
-
 .App-header {
   width: 100%;
   margin: 0;
@@ -60,18 +55,10 @@
     opacity: 0;
   }
 }
-.icon-git {
-  padding-right: 14px;
-  height: calc((10.5px + 1.8vmin + 1vmax) / 1.425);
-}
-.icon-linkedin {
-  padding-right: 15px;
-  height: calc((10px + 2vmin + 1vmax) / 1.4);
-}
-.icon-resume {
-  padding-right: 13.5px;
-  padding-left: 5px;
-  height: calc((11px + 2vmin + 1.2vmax) / 1.39);
+.icon-top {
+  padding-right: 7px;
+  padding-left: 7px;
+  height: calc((10px + 2vmin + 1vmax) / 1.5);
 }
 .footer {
   text-align: center;
