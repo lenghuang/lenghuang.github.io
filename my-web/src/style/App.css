@@ -67,3 +67,6 @@
   font-size: calc((10px + 1.23vmin + 0.42vmax) / 1.4);
   padding: calc((10px + 2vmin + 1vmax) / 1.1);
 }
+a {
+  color: #c5760e;
+}

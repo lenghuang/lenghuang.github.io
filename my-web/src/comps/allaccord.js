@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/App.css";
 import AboutMe from "./aboutme.js";
+import FunStuff from "./funstuff.js";
 import Accordion from "./accordion.js";
 
 function AllAccord() {
@@ -99,29 +100,7 @@ function AllAccord() {
       <Accordion title="Fun Stuff" id="fun">
         <div className="accordion-text">
           {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget felis
-          eget nunc lobortis mattis aliquam. Lorem ipsum dolor sit amet
-          consectetur adipiscing elit. Id eu nisl nunc mi ipsum faucibus vitae.
-          Mattis vulputate enim nulla aliquet porttitor lacus. Viverra vitae
-          congue eu consequat. Morbi non arcu risus quis varius quam quisque id
-          diam. Molestie at elementum eu facilisis sed odio morbi quis commodo.
-          Suspendisse interdum consectetur libero id faucibus. Cursus eget nunc
-          scelerisque viverra mauris in aliquam. Mi proin sed libero enim sed
-          faucibus turpis. Cras tincidunt lobortis feugiat vivamus at augue.
-          Amet consectetur adipiscing elit ut aliquam purus sit amet luctus.
-          Laoreet id donec ultrices tincidunt arcu non sodales neque. Amet
-          volutpat consequat mauris nunc congue. Faucibus vitae aliquet nec
-          ullamcorper sit. Volutpat consequat mauris nunc congue nisi vitae
-          suscipit tellus. Donec enim diam vulputate ut pharetra. Sit amet
-          volutpat consequat mauris nunc congue nisi vitae. Etiam tempor orci eu
-          lobortis elementum nibh tellus. Tempor commodo ullamcorper a lacus
-          vestibulum. Nunc id cursus metus aliquam eleifend mi in. Consequat
-          mauris nunc congue nisi vitae suscipit. Auctor urna nunc id cursus
-          metus aliquam eleifend. Elementum sagittis vitae et leo duis. Orci
-          phasellus egestas tellus rutrum tellus pellentesque eu. Blandit cursus
-          risus at ultrices mi. Leo duis ut diam quam nulla porttitor massa id
-          neque. Tellus at urna condimentum mattis pellentesque.
+          <FunStuff />
         </div>
       </Accordion>
     </div>
