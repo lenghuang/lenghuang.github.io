@@ -16,6 +16,7 @@
   font-size: calc((10px + 2vmin + 0.75vmax) / 1.3);
   padding: calc(5px + 1vmin);
   transition: background-color 0.5s ease;
+  clear: both;
 }
 
 .accordion-title-abt:hover,
@@ -34,6 +35,7 @@
   font-size: calc((10px + 2vmin + 0.75vmax) / 1.3);
   padding: calc(5px + 1vmin);
   transition: background-color 0.5s ease;
+  clear: both;
 }
 
 .accordion-title-exp:hover,
@@ -52,6 +54,7 @@
   font-size: calc((10px + 2vmin + 0.75vmax) / 1.3);
   padding: calc(5px + 1vmin);
   transition: background-color 0.5s ease;
+  clear: both;
 }
 
 .accordion-title-proj:hover,
@@ -87,7 +90,7 @@
 }
 
 .accordion-content {
-  background-color: #1b3752;
+  background-color: #202020;
   overflow: hidden;
   transition: max-height 0.5s ease;
 }

@@ -40,7 +40,7 @@ function TopLine() {
           {" "}
           Links:{" "}
         </span>
-        <a href="https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len%20Resume.pdf?alt=media&token=097ea47e-1b56-4fa7-8887-740d5e922d8c">
+        <a href="https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2Ftemporary_summer.pdf?alt=media&token=98e3440b-da64-4692-abad-58b8d53b65d3">
           <img src={res} alt="resume" className="icon-top" />
         </a>
         <a href="https://github.com/lenghuang">

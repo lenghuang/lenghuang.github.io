@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/App.css";
+import AboutMe from "./aboutme.js";
 import Accordion from "./accordion.js";
 
 function AllAccord() {
@@ -7,39 +8,7 @@ function AllAccord() {
     <div className="accordContainer">
       <Accordion title="About Me" id="abt">
         <div className="accordion-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget felis
-          eget nunc lobortis mattis aliquam. Lorem ipsum dolor sit amet
-          consectetur adipiscing elit. Id eu nisl nunc mi ipsum faucibus vitae.
-          Mattis vulputate enim nulla aliquet porttitor lacus. Viverra vitae
-          congue eu consequat. Morbi non arcu risus quis varius quam quisque id
-          diam. In ante metus dictum at tempor commodo ullamcorper a lacus.
-          Ipsum dolor sit amet consectetur adipiscing elit duis. Dui ut ornare
-          lectus sit amet est. Sit amet tellus cras adipiscing. Bibendum enim
-          facilisis gravida neque convallis. Sit amet facilisis magna etiam
-          tempor orci eu. Sem nulla pharetra diam sit. Convallis a cras semper
-          auctor neque. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Eget
-          mauris pharetra et ultrices neque. Tristique magna sit amet purus
-          gravida quis blandit. Purus gravida quis blandit turpis cursus. Platea
-          dictumst vestibulum rhoncus est pellentesque elit. Quam quisque id
-          diam vel quam elementum. Senectus et netus et malesuada fames ac
-          turpis. At augue eget arcu dictum varius duis at. Feugiat in fermentum
-          posuere urna nec tincidunt praesent semper feugiat. Phasellus faucibus
-          scelerisque eleifend donec pretium vulputate. Ornare quam viverra orci
-          sagittis. Nulla pharetra diam sit amet nisl suscipit adipiscing
-          bibendum. At elementum eu facilisis sed. Bibendum at varius vel
-          pharetra. Porttitor rhoncus dolor purus non. Vel facilisis volutpat
-          est velit egestas dui id ornare. Duis tristique sollicitudin nibh sit
-          amet commodo. Imperdiet proin fermentum leo vel. Netus et malesuada
-          fames ac turpis egestas. Leo duis ut diam quam nulla porttitor massa
-          id neque. Consequat ac felis donec et odio pellentesque. Amet aliquam
-          id diam maecenas. Posuere urna nec tincidunt praesent semper feugiat
-          nibh sed. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum.
-          Nec ullamcorper sit amet risus nullam eget felis eget. Nec ullamcorper
-          sit amet risus. Blandit turpis cursus in hac habitasse platea.
-          Consectetur adipiscing elit ut aliquam purus sit amet. Id porta nibh
-          venenatis cras sed felis eget velit. Amet dictum sit amet justo donec
-          enim diam.
+          <AboutMe />
         </div>
       </Accordion>
       <Accordion title="Experience" id="exp">
