@@ -14,11 +14,10 @@ function TopLine() {
           emptyPause={1100}
           typingInterval={100}
           items={[
-            "Problem Solver",
-            "Eternal Student",
+            "Computer Scientist",
             "Software Engineer",
-            "Brogrammer",
-            "The Next Hokage",
+            "Problem Solver",
+            "Data Analyst",
           ]}
         />
       </div>

@@ -68,5 +68,5 @@
   padding: calc((10px + 2vmin + 1vmax) / 1.1);
 }
 a {
-  color: #c5760e;
+  color: #c5760e !important;
 }

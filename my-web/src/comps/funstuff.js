@@ -32,21 +32,21 @@ function FunStuff() {
           >
             NCAA Division III
           </a>{" "}
-          level for Carnegie Mellon University. Music is essential in balancing
-          all aspects of my life, so I have pursued this in the form of teaching
-          myself guitar and joining the{" "}
+          level for Carnegie Mellon University. Music provides me motivation and
+          comfort so I taught myself guitar and joined the{" "}
           <a
             style={{ color: "#c5760e" }}
             href="https://www.youtube.com/watch?v=-5hjfOI_XaY"
           >
             Joyful Noise{" "}
           </a>{" "}
-          acapella group. Finally, civically engaged my community by leading my
-          high school in the YMCA Northeast Regional Model United Nations
-          programs, as well as being chosen as 23 out of 2000+ delegates chosen
-          to represent our program at the Conference of National Affairs, a
-          conference for advocating federal reforms with similar YMCACE programs
-          from around the nation.
+          acapella group. I led my high school's civic engagement programs
+          through the YMCA NE Model United Nations conference. My senior year, I
+          was fortunate enough to be chosen as 23 out of 2000+ delegates to
+          represent our program at the Conference of National Affairs. Here, my
+          proposal for streamling the college application process for
+          ex-convicts in order to reduce recidivism rates survived to be in the
+          top 100/600+ proposals presented.
         </div>
       </div>
       <div className="w3-half">
