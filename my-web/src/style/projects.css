@@ -1,7 +1,13 @@
 .card-img-top {
-  height: 30vh;
+	height: 13rem;
 }
 .card-deck {
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+.card-container {
+	padding-left: calc(5vh + 2vw);
+	padding-right: calc(5vh + 2vw);
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 }
