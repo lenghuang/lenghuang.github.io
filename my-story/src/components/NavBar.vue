@@ -2,6 +2,7 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
+        <!--
         <a href="#" style="padding-left: 3rem;" class="brand-logo">Len Huang</a>
         <ul id="nav-mobile" style="padding-right: 3rem;" class="right hide-on-med-and-down">
           <li><a href="#" v-scroll-to="'#who'">Who</a></li>
@@ -10,6 +11,12 @@
           <li><a href="#">Where</a></li>
           <li><a href="#">Why</a></li>
         </ul>
+        -->
+        <a href="#" v-scroll-to="'#who'">Who</a> |
+        <a href="#" v-scroll-to="'#'">What</a> |
+        <a href="#" v-scroll-to="'#'">When</a> |
+        <a href="#" v-scroll-to="'#'">Where</a> |
+        <a href="#" v-scroll-to="'#'">Why</a>
       </div>
     </nav>
   </div>
