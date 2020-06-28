@@ -1,13 +1,15 @@
 <template>
   <div class="center">
-    <h1> Len Huang. </h1>
-    <h3>
-        <a href="#" v-scroll-to="'#who'">Who</a> |
-        <a href="#" v-scroll-to="'#'">What</a> |
-        <a href="#" v-scroll-to="'#'">When</a> |
-        <a href="#" v-scroll-to="'#'">Where</a> |
-        <a href="#" v-scroll-to="'#'">Why</a>
-    </h3>
+    <div class="row">
+      <h1> Len Huang </h1>
+      <h3>
+          <a href="#" v-scroll-to="'#who'">Who</a> |
+          <a href="#" v-scroll-to="'#what'">What</a> |
+          <a href="#" v-scroll-to="'#when'">When</a> |
+          <a href="#" v-scroll-to="'#where'">Where</a> |
+          <a href="#" v-scroll-to="'#why'">Why</a>
+      </h3>
+    </div>
   </div>
 </template>
 
@@ -21,8 +23,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
