@@ -26,6 +26,50 @@ export const aboutData = {
     'This website is a testament to my personal story. Stay for a little bit... it gets better.',
   resume: 'https://www.linkedin.com/in/len-huang', // if no resume, the button will not show up
 };
+//Node.js, React, Redux, Gatsby, PyTorch, scikit-Learn, Pandas, Jupyter, Git, Jenkins
+
+// WHAT I CAN DO DATA
+export const whatData = [
+  {
+    id: nanoid(),
+    title: 'Languages',
+    content: ['Python', 'C', 'Java', 'SMLNJ', 'Javascript', 'Terraform', 'HTML/CSS'],
+  },
+  {
+    id: nanoid(),
+    title: 'Frameworks',
+    content: ['React', 'Redux', 'Express', 'PyTorch', 'scikit-Learn', 'Jupyter', 'JenkinsCI'],
+  },
+  {
+    id: nanoid(),
+    title: 'Google Cloud',
+    content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
+  },
+  {
+    id: nanoid(),
+    title: 'AWS',
+    content: ['S3 Storage', 'DynamoDB', 'Lambda', 'ALB', 'Route 53'],
+  },
+];
+
+// WHEN HAVE I DONE THIS DATA
+export const whenData = [
+  {
+    id: nanoid(),
+    company: 'Capital One Financial Corporation',
+    position: 'Software Engineering Intern',
+    time: 'Summer 2020',
+    desc: 'Changed banking for Good',
+  },
+  {
+    id: nanoid(),
+    company: 'Carnegie Mellon',
+    position: '15-150 Teaching Assistant',
+    time: 'Summer, Fall Semesters 2020',
+    desc:
+      'Taught 15-150, Principles of Functional Programming, the third course in the core computer science curriculum.',
+  },
+];
 
 // PROJECTS DATA
 export const projectsData = [
@@ -84,9 +128,4 @@ export const footerData = {
       url: '',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

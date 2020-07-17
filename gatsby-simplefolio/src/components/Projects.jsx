@@ -29,10 +29,11 @@ const Projects = () => {
           <Title title="Where to see" />
           {projects.map((project, i) => {
             const { title, info, info2, url, repo, img, id } = project;
-            const projDesc = (
+            const projDesc = (left, right) => (
               <Col lg={4} sm={12} key={`desc${id}`}>
                 <Fade
-                  left={isDesktop}
+                  left={left}
+                  right={right}
                   bottom={isMobile}
                   duration={1000}
                   delay={250}
@@ -41,11 +42,8 @@ const Projects = () => {
                   <div className="project-wrapper__text">
                     <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                     <div>
-                      <p>
-                        {info ||
-                          'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                      </p>
-                      <p className="mb-4">{info2 || ''}</p>
+                      <p>{info}</p>
+                      <p className="mb-4">{info2}</p>
                     </div>
                     <a
                       target="_blank"
@@ -70,10 +68,11 @@ const Projects = () => {
                 </Fade>
               </Col>
             );
-            const projImg = (
+            const projImg = (left, right) => (
               <Col lg={8} sm={12} key={`img${id}`}>
                 <Fade
-                  right={isDesktop}
+                  left={left}
+                  right={right}
                   bottom={isMobile}
                   duration={1000}
                   delay={500}
@@ -110,7 +109,9 @@ const Projects = () => {
             );
             return (
               <Row key={id}>
-                {isDesktop && i % 2 === 0 ? [projDesc, projImg] : [projImg, projDesc]}
+                {isDesktop && i % 2 === 0
+                  ? [projDesc(isDesktop, false), projImg(false, isDesktop)]
+                  : [projImg(isDesktop, false), projDesc(false, isDesktop)]}
               </Row>
             );
           })}
