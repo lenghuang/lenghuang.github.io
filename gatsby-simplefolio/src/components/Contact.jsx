@@ -1,31 +1,52 @@
 import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
+import hello from '../images/hello.gif';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
 import Title from './Title';
 
+const SocialStuff = ({ networks }) => {
+  return (
+    <div className="social-links">
+      {networks &&
+        networks.map((network) => {
+          const { id, name, url } = network;
+          return (
+            <a
+              key={id}
+              href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-label={name}
+            >
+              <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
+            </a>
+          );
+        })}
+    </div>
+  );
+};
+
 const Contact = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+  const { footer } = useContext(PortfolioContext);
+  const { networks } = footer;
 
   return (
-    <section id="contact">
+    <section id="why">
       <Container>
-        <Title title="Contact" />
+        <Fade top duration={1000} delay={100} distance="30px">
+          <img style={{ width: '10rem' }} src={hello} alt="Len Huang hello reach out to me" />
+        </Fade>
+        <Title title="why we should connect" />
         <Fade bottom duration={1000} delay={200} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
-              {cta || 'Would you like to work with me? Awesome!'}
+              Thanks for reading through my story and learning more about my background. This has
+              been my who, what, when, and where. If any of those interested you, that's a reason
+              why for us to chat!
             </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--resume"
-              href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
-            >
-              {btn || "Let's Talk"}
-            </a>
           </div>
+          <SocialStuff networks={networks} />
         </Fade>
       </Container>
     </section>

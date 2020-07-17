@@ -23,7 +23,7 @@ export const aboutData = {
   paragraphTwo:
     'The next summer, I found myself studying computer science at Carnegie Mellon University. Here, I would make life-long friendships, challenge myself academically like never before, and channel my creativity through projects.',
   paragraphThree:
-    'This website is a testament to my personal story. Stay for a little bit... it gets better.',
+    "This website is my personal story. I've told you who I am. Now let me tell you what I can do, when I've done these things, where I've done them, and finally why we should connect.",
   resume: 'https://www.linkedin.com/in/len-huang', // if no resume, the button will not show up
 };
 //Node.js, React, Redux, Gatsby, PyTorch, scikit-Learn, Pandas, Jupyter, Git, Jenkins
@@ -97,35 +97,23 @@ export const projectsData = [
   },
 ];
 
-// CONTACT DATA
-export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
-};
-
 // FOOTER DATA
 export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/len-huang',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/lenghuang',
+    },
+    {
+      id: nanoid(),
+      name: 'files-o',
+      url: 'https://www.linkedin.com/in/len-huang',
     },
   ],
 };

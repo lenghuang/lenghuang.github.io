@@ -3,6 +3,8 @@
   color: $dark-blue-text;
   margin-top: -15rem;
   padding-top: 15rem;
+  margin-bottom: -10rem;
+  padding-bottom: 15rem;
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -65,7 +67,7 @@
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
         transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
           0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-
+        filter: contrast(90%);
         @include respond(phone) {
           border: 1px solid #d2d2d2;
           box-shadow: none;
