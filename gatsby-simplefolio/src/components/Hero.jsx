@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
+import PortfolioContext from '../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -32,16 +32,18 @@ const Header = () => {
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <p className="hero-cta">
+          <div className="hero-cta">
             {cta &&
               cta.map((c) => (
-                <span className="cta-btn cta-btn--hero">
-                  <Link to="about" smooth duration={1000}>
-                    {c}
-                  </Link>
-                </span>
+                <div key={c} style={{ paddingRight: '2rem' }}>
+                  <span className="cta-btn cta-btn--hero">
+                    <Link to={c.toLowerCase()} smooth duration={1000}>
+                      {c}
+                    </Link>
+                  </span>
+                </div>
               ))}
-          </p>
+          </div>
         </Fade>
       </Container>
     </section>
