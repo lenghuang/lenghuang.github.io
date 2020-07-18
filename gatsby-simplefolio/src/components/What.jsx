@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup, Card } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../context/context';
 import Title from './Title';
@@ -32,29 +32,28 @@ const What = () => {
               whats.map((skills) => {
                 const { id, title, content } = skills;
                 return (
-                  <Col
-                    sm={16 / whats.length}
-                    md={14 / whats.length}
-                    lg={12 / whats.length}
-                    key={id}
-                  >
-                    <Fade bottom={true} duration={1000} delay={250} distance="30px">
-                      <h3 align="center" className="what-wrapper__text-title">
-                        {title.toUpperCase()}
-                      </h3>
-                      <ul>
-                        {content.map((s) => (
-                          <li key={s}>
-                            <p className="what-wrapper__text">{s}</p>
-                          </li>
-                        ))}
-                      </ul>
+                  <Col key={id} sm={6} md={4} lg={3}>
+                    <Fade key={id} bottom={true} duration={1000} delay={250} distance="30px">
+                      <Card>
+                        <Card.Header>
+                          <h3 align="center" className="what-wrapper__text-title">
+                            {title.toUpperCase()}
+                          </h3>
+                        </Card.Header>
+                        <ListGroup variant="flush">
+                          {content.map((s) => (
+                            <ListGroup.Item key={s}>
+                              <p className="what-wrapper__text">{s}</p>
+                            </ListGroup.Item>
+                          ))}
+                        </ListGroup>
+                      </Card>
                     </Fade>
                   </Col>
                 );
               })}
           </Row>
-          <div style={{ paddingTop: '5rem' }} className="back-to-top-dark">
+          <div style={{ paddingTop: '-2rem', paddingBottom: '5rem' }} className="back-to-top-dark">
             <Fade top duration={1000} delay={300} distance="30px">
               <Link to="when" smooth duration={1000} offset={100}>
                 <i className="fa fa-angle-down fa-2x" aria-hidden="true" />

@@ -110,9 +110,11 @@ const Projects = () => {
             );
             return (
               <Row key={id}>
-                {isDesktop && i % 2 === 0
-                  ? [projDesc(isDesktop, false), projImg(false, isDesktop)]
-                  : [projImg(isDesktop, false), projDesc(false, isDesktop)]}
+                {isDesktop
+                  ? i % 2 === 0
+                    ? [projDesc(isDesktop, false), projImg(false, isDesktop)]
+                    : [projImg(isDesktop, false), projDesc(false, isDesktop)]
+                  : [projDesc(true, false), projImg(false, true)]}
               </Row>
             );
           })}

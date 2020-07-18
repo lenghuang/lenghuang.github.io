@@ -11,6 +11,10 @@
     padding-top: 5rem;
   }
 
+  .card {
+    margin-bottom: 2rem;
+  }
+
   .what-wrapper {
     margin-bottom: 15rem;
 
@@ -30,23 +34,10 @@
       text-align: center !important;
     }
 
-    .li {
-      margin: -1rem;
-      list-style-type: none;
-    }
-
     &__text {
       text-align: center;
 
-      @include respond(phone) {
-        margin-bottom: 2.5rem !important;
-      }
-      @include respond(tab-land) {
-        margin-bottom: 4.8rem;
-      }
-
       &-title {
-        margin-bottom: 1.8rem;
         font-weight: bold;
         font-size: calc(#{$mid-font-size} - 0.15rem);
 

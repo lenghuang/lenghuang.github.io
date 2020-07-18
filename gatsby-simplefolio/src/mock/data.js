@@ -51,13 +51,13 @@ export const whatData = [
   },
   {
     id: nanoid(),
-    title: 'Google Cloud',
-    content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
+    title: 'AWS',
+    content: ['S3 Storage', 'DynamoDB', 'Lambda', 'ALB', 'Route 53'],
   },
   {
     id: nanoid(),
-    title: 'AWS',
-    content: ['S3 Storage', 'DynamoDB', 'Lambda', 'ALB', 'Route 53'],
+    title: 'Google Cloud',
+    content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
   },
 ];
 

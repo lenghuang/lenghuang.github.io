@@ -23,25 +23,23 @@ const makeCol = (w) => {
   return (
     <React.Fragment>
       <Col className="when-wrapper__center" sm={4} lg={2}>
-        <a href={'#!'} target="_blank" aria-label="Project Link" rel="noopener noreferrer">
-          <Tilt
-            options={{
-              reverse: false,
-              max: 15,
-              perspective: 1000,
-              scale: 1,
-              speed: 300,
-              transition: true,
-              axis: null,
-              reset: true,
-              easing: 'cubic-bezier(.03,.98,.52,.99)',
-            }}
-          >
-            <div data-tilt className="thumbnail rounded">
-              <img className="when-wrapper__logo" src={w.img} alt={w.company} />
-            </div>
-          </Tilt>
-        </a>
+        <Tilt
+          options={{
+            reverse: false,
+            max: 15,
+            perspective: 1000,
+            scale: 1,
+            speed: 300,
+            transition: true,
+            axis: null,
+            reset: true,
+            easing: 'cubic-bezier(.03,.98,.52,.99)',
+          }}
+        >
+          <div data-tilt className="thumbnail rounded">
+            <img className="when-wrapper__logo" src={w.img} alt={w.company} />
+          </div>
+        </Tilt>
       </Col>
       <Col sm={8} lg={4}>
         <p className="when-wrapper__text-title">
