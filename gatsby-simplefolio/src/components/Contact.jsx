@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import hello from '../images/hello.gif';
+import { Link } from 'react-scroll';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
 import Title from './Title';
@@ -47,6 +48,11 @@ const Contact = () => {
             </p>
           </div>
           <SocialStuff networks={networks} />
+          <div className="back-to-top">
+            <Link to="hero" smooth duration={1000}>
+              <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
+            </Link>
+          </div>
         </Fade>
       </Container>
     </section>

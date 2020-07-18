@@ -3,8 +3,8 @@
   color: $dark-blue-text;
   margin-top: -5rem;
   padding-top: 12rem;
-  margin-bottom: -12rem;
-  padding-bottom: 8rem;
+  margin-bottom: -18rem;
+  padding-bottom: 2rem;
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -31,7 +31,7 @@
     }
 
     .li {
-      margin: calc(-1rem);
+      margin: -1rem;
       list-style-type: none;
     }
 

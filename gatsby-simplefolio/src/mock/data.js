@@ -12,7 +12,13 @@ export const heroData = {
   title: 'My name is ',
   name: 'Len Huang',
   subtitle: 'and this is my story.',
-  cta: ['Who', 'What', 'When', 'Where', 'Why'],
+  cta: [
+    { name: 'Who' },
+    { name: 'What' },
+    { name: 'When', offset: 82 },
+    { name: 'Where', offset: 82 },
+    { name: 'Why' },
+  ],
 };
 
 // ABOUT DATA
@@ -56,18 +62,40 @@ export const whatData = [
 export const whenData = [
   {
     id: nanoid(),
-    company: 'Capital One Financial Corporation',
+    company: 'Capital One',
+    emoji: '💸',
     position: 'Software Engineering Intern',
     time: 'Summer 2020',
-    desc: 'Changed banking for Good',
+    desc: '#ChangeBankingForGood',
+    img: `https://www.ilmcorp.com/wp-content/uploads/2018/05/Capital-One-Logo-square.jpg`,
   },
   {
     id: nanoid(),
     company: 'Carnegie Mellon',
+    emoji: '📚',
     position: '15-150 Teaching Assistant',
     time: 'Summer, Fall Semesters 2020',
-    desc:
-      'Taught 15-150, Principles of Functional Programming, the third course in the core computer science curriculum.',
+    desc: '#FunctionsAreValues',
+    img: 'https://avatars3.githubusercontent.com/u/53090894?s=280&v=4',
+  },
+  {
+    id: nanoid(),
+    company: 'Change Ethic LLC',
+    emoji: '🥰',
+    position: 'Change Management Intern',
+    time: 'Summer 2019',
+    desc: '#FailureResilience',
+    img:
+      'https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FScreen%20Shot%202020-07-17%20at%2011.09.03%20PM.png?alt=media&token=4674fe0f-cdd5-4fce-96a1-f284c6870a5f',
+  },
+  {
+    id: nanoid(),
+    company: 'Snapology',
+    emoji: '🐊',
+    position: 'STEAM Assistant Teacher',
+    time: 'Summer 2018 to Summer 2019',
+    desc: '#EducationalPlay',
+    img: 'https://hulafrog2.com/uploads/5ba3e8be5405d.png',
   },
 ];
 

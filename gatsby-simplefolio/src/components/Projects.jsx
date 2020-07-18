@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
+import { Link } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
 import Title from './Title';
@@ -88,7 +89,7 @@ const Projects = () => {
                       <Tilt
                         options={{
                           reverse: false,
-                          max: 8,
+                          max: 5,
                           perspective: 1000,
                           scale: 1,
                           speed: 300,
@@ -115,6 +116,13 @@ const Projects = () => {
               </Row>
             );
           })}
+          <div className="back-to-top-dark">
+            <Fade top duration={1000} delay={200} distance="30px">
+              <Link to="why" smooth duration={1000}>
+                <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+              </Link>
+            </Fade>
+          </div>
         </div>
       </Container>
     </section>

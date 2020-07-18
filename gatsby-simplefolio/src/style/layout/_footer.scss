@@ -1,7 +1,7 @@
 .footer {
   background-color: $dark-grey;
   color: $white-color;
-  padding: 0.5rem 0;
+  padding: 2rem 0 0.5rem 0;
 
   @include respond(phone) {
     border: 0px;
@@ -37,12 +37,16 @@
 }
 
 .back-to-top i {
-  color: $white-color;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
+  color: $white-color;
   cursor: pointer;
 
   &:hover {
     transform: translateY(-2px);
+  }
+
+  &-dark {
+    color: $primary-color;
   }
 }
