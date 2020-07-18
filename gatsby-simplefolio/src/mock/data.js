@@ -1,10 +1,13 @@
 import { nanoid } from 'nanoid';
+import preview from '../images/profile_wide.png';
 
 // HEAD DATA
 export const headData = {
   title: 'Len Huang', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: 'Len Huang is a computer science student at Carengie Mellon University', // e.g: Welcome to my website
+  description:
+    'Carnegie Mellon School of Computer Science. My personal who, what, when, where, and why.', // e.g: Welcome to my website
+  preview,
 };
 
 // HERO DATA
@@ -32,7 +35,7 @@ export const aboutData = {
     "This website is my personal story. I've told you who I am. Now let me tell you what I can do, when I've done these things, where I've done them, and finally why we should connect.",
   resume: 'https://www.linkedin.com/in/len-huang', // if no resume, the button will not show up
 };
-//Node.js, React, Redux, Gatsby, PyTorch, scikit-Learn, Pandas, Jupyter, Git, Jenkins
+// Node.js, React, Redux, Gatsby, PyTorch, scikit-Learn, Pandas, Jupyter, Git, Jenkins
 
 // WHAT I CAN DO DATA
 export const whatData = [

@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Alert } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import typing from '../images/typing.gif';
 import { Link } from 'react-scroll';
+import typing from '../images/typing.gif';
 import PortfolioContext from '../context/context';
 
 const Header = () => {
@@ -24,6 +24,11 @@ const Header = () => {
 
   return (
     <div>
+      <div style={{ marginBottom: '-5rem', fontSize: '1.5rem' }}>
+        <Alert variant="warning">
+          This website is still under construction. View on desktop for the best experience.
+        </Alert>
+      </div>
       <section id="hero" className="jumbotron">
         <Container>
           <Row>
