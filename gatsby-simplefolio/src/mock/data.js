@@ -1,5 +1,8 @@
 import { nanoid } from 'nanoid';
 import preview from '../images/profile_wide.png';
+import profile from '../images/profile.jpg';
+import banner from '../images/banner.png';
+import cmuimage from '../images/cmuimage.png';
 
 // HEAD DATA
 export const headData = {
@@ -27,6 +30,7 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
+  img1: profile,
   paragraphOne:
     'I was born and raised in Holmdel, New Jersey. Having graduated from high school in 2019, I began moving past my days of athletics / advocacy and started looking to find my place in the world.',
   paragraphTwo:
@@ -107,6 +111,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'banner.png',
+    img1: banner,
     title: 'MLforALL: Machine Learning for ALL',
     info:
       'MLforALL guides you in learning about and experimenting with machine learning without coding experience. This is done by providing an accessible all-in-one platform for machine learning education.',
@@ -118,6 +123,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'cmuimage.png',
+    img1: cmuimage,
     title: 'CMU Image Share',
     info:
       'Our academic advisor wanted to foster community during quaratine by having us email her photos everyday. To streamline this process, I created this web app that allows anyone to upload photos and have it update for everyone in realtime.',

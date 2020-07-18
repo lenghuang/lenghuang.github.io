@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Where to see" />
           {projects.map((project, i) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, img1, id } = project;
             const projDesc = (left, right) => (
               <Col lg={4} sm={12} key={`desc${id}`}>
                 <Fade
@@ -99,8 +99,9 @@ const Projects = () => {
                           easing: 'cubic-bezier(.03,.98,.52,.99)',
                         }}
                       >
-                        <div data-tilt className="thumbnail rounded">
-                          <ProjectImg alt={title} filename={img} />
+                        <div style={{ width: '65rem' }} data-tilt className="thumbnail rounded">
+                          {/*<ProjectImg alt={title} filename={img} />*/}
+                          <img style={{ width: '65rem' }} src={img1} alt={title} />
                         </div>
                       </Tilt>
                     </a>
