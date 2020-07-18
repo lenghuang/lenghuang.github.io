@@ -3,11 +3,11 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  border-bottom: 0px;
+  border-bottom: 0;
   background: $white-color;
   font-weight: 400;
   color: $dark-blue-text;
-  padding: 0rem 5.6rem;
+  padding: 0 5.6rem;
   margin-bottom: 0;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@
   background-size: cover; */
 
   @include respond(phone) {
-    padding: 0rem $default-font-size;
+    padding: 0 $default-font-size;
   }
 
   .hero-title {
