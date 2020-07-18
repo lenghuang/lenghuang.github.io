@@ -55,11 +55,6 @@
     "type": "git",
     "url": "https://github.com/lenghuang/me"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.+(js|jsx)": [
       "eslint --fix",
