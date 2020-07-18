@@ -48,7 +48,7 @@
       &-title {
         margin-bottom: 1.8rem;
         font-weight: bold;
-        font-size: calc($mid-font-size - 0.15rem);
+        font-size: calc(#{$mid-font-size} - 0.15rem);
 
         @include respond(phone) {
           font-size: 2rem;
