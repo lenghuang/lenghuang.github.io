@@ -37,7 +37,8 @@ export const aboutData = {
     'The next summer, I found myself studying computer science at Carnegie Mellon University. Here, I would make life-long friendships, challenge myself academically like never before, and channel my creativity through projects.',
   paragraphThree:
     "This website is my personal story. I've told you who I am. Now let me tell you what I can do, when I've done these things, where I've done them, and finally why we should connect.",
-  resume: 'https://www.linkedin.com/in/len-huang', // if no resume, the button will not show up
+  resume:
+    'https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len_Resume.pdf?alt=media&token=e31b9257-cdd6-49d1-b270-bb35d2318037', // if no resume, the button will not show up
 };
 // Node.js, React, Redux, Gatsby, PyTorch, scikit-Learn, Pandas, Jupyter, Git, Jenkins
 
@@ -150,7 +151,8 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'files-o',
-      url: 'https://www.linkedin.com/in/len-huang',
+      url:
+        'https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len_Resume.pdf?alt=media&token=e31b9257-cdd6-49d1-b270-bb35d2318037',
     },
   ],
 };
