@@ -31,8 +31,8 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={300} distance="30px">
               <div className="about-wrapper__image">
-                {/*<AboutImg alt="profile picture" filename={img} />*/}
-                <img style={{ width: '36rem' }} src={img1} alt="Len Huang profile picture" />
+                <AboutImg alt="Len Huang portrait picture" filename={img} />
+                {/*<img style={{ width: '36rem' }} src={img1} alt="Len Huang profile picture" />*/}
               </div>
             </Fade>
           </Col>

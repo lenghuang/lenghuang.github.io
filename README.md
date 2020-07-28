@@ -10,3 +10,4 @@ TODO:
 - Add toggle in "What" to browse various options and see what I did
 - Figure out why graphQL doesn't work
 - Update resume when done
+- Reverse behavior of the image cards
