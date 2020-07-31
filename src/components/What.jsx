@@ -1,12 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col, ListGroup, Card } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import PortfolioContext from '../context/context';
 import Title from './Title';
 
-const What = () => {
-  const { what } = useContext(PortfolioContext);
+const What = ({ data }) => {
+  const what = data;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);

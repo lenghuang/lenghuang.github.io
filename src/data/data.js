@@ -19,11 +19,11 @@ export const heroData = {
   name: 'Len Huang',
   subtitle: 'and this is my story.',
   cta: [
-    { name: 'Who' },
-    { name: 'What' },
-    { name: 'When', offset: 82 },
-    { name: 'Where', offset: 82 },
-    { name: 'Why' },
+    { name: 'Who', to: '', id: nanoid() },
+    { name: 'What', to: 'what', id: nanoid() },
+    { name: 'When', to: 'when', offset: 82, id: nanoid() },
+    { name: 'Where', to: 'where', offset: 82, id: nanoid() },
+    { name: 'Why', to: 'why', id: nanoid() },
   ],
 };
 
@@ -140,8 +140,8 @@ export const projectsData = [
   },
 ];
 
-// FOOTER DATA
-export const footerData = {
+// CONTACT DATA
+export const contactData = {
   networks: [
     {
       id: nanoid(),

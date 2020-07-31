@@ -1,24 +1,29 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-scroll';
-import PortfolioContext from '../context/context';
+import Nav from 'react-bootstrap/Nav';
+import { Link } from 'gatsby';
 
-const MyNav = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { cta } = hero;
+const linkStyles = {
+  margin: '0.05rem',
+  padding: '0.25rem',
+  color: 'black',
+  textDecoration: 'none',
+};
+
+const MyNav = ({ data }) => {
+  const { cta } = data;
   return (
     <Navbar bg="light" sticky="top">
-      <Navbar.Brand>
-        <Link to="hero" smooth duration={500}>
-          Len Huang
-        </Link>
-      </Navbar.Brand>
-      <Nav className="mr-auto"></Nav>
+      <Nav className="mr-auto"> </Nav>
       <Nav>
-        <Nav.Link href="#deets">More deets</Nav.Link>
-        <Nav.Link eventKey={2} href="#memes">
-          Dank memes
-        </Nav.Link>
+        {cta &&
+          cta.map((obj) => {
+            return (
+              <Link key={obj.id} to={`/${obj.to}`} style={linkStyles}>
+                {obj.name}
+              </Link>
+            );
+          })}
       </Nav>
     </Navbar>
   );

@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import hello from '../images/hello.gif';
 import { Link } from 'react-scroll';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../context/context';
 import Title from './Title';
 
 const SocialStuff = ({ networks }) => {
@@ -28,9 +27,8 @@ const SocialStuff = ({ networks }) => {
   );
 };
 
-const Contact = () => {
-  const { footer } = useContext(PortfolioContext);
-  const { networks } = footer;
+const Contact = ({ data }) => {
+  const { networks } = data;
 
   return (
     <section id="why">

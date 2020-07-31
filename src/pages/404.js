@@ -4,8 +4,7 @@ import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import { headData } from '../mock/data';
+import { headData } from '../data/data';
 import '../style/main.scss';
 
 export default () => {

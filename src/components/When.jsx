@@ -3,7 +3,6 @@ import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Link } from 'react-scroll';
 import { Col, Row, Container } from 'react-bootstrap';
-import PortfolioContext from '../context/context';
 import Title from './Title';
 
 const pairUp = (iterable) => {
@@ -59,8 +58,8 @@ const makeCol = (w) => {
   );
 };
 
-const When = () => {
-  const { when } = useContext(PortfolioContext);
+const When = ({ data }) => {
+  const when = data;
   const whens = pairUp(Object.values(when));
   return (
     <section id="when">

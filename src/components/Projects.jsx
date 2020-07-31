@@ -1,14 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Link } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
-import PortfolioContext from '../context/context';
 import Title from './Title';
 import ProjectImg from './Image/ProjectImg';
 
-const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+const Projects = ({ data }) => {
+  const projects = data;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);

@@ -4,11 +4,9 @@ import { Link } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from './Title';
 import AboutImg from './Image/AboutImg';
-import PortfolioContext from '../context/context';
 
-const About = () => {
-  const { about } = useContext(PortfolioContext);
-  const { img, img1, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+const About = ({ data }) => {
+  const { img, img1, paragraphOne, paragraphTwo, paragraphThree, resume } = data;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
