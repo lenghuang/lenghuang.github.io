@@ -52,7 +52,7 @@ export const whatData = [
   {
     id: nanoid(),
     title: 'Frameworks',
-    content: ['React', 'Redux', 'Express', 'PyTorch', 'scikit-Learn', 'Jupyter', 'JenkinsCI'],
+    content: ['React', 'Redux', 'Express', 'JenkinsCI'],
   },
   {
     id: nanoid(),
@@ -63,6 +63,11 @@ export const whatData = [
     id: nanoid(),
     title: 'Google Cloud',
     content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
+  },
+  {
+    id: nanoid(),
+    title: 'Data Science',
+    content: ['PyTorch', 'scikit-Learn', 'Pandas', 'Jupyter'],
   },
 ];
 

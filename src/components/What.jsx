@@ -32,7 +32,7 @@ const What = () => {
               whats.map((skills) => {
                 const { id, title, content } = skills;
                 return (
-                  <Col key={id} sm={6} md={4} lg={3}>
+                  <Col key={id} md={4} lg={3}>
                     <Fade key={id} bottom={true} duration={1000} delay={250} distance="30px">
                       <Card>
                         <Card.Header>
@@ -52,6 +52,9 @@ const What = () => {
                   </Col>
                 );
               })}
+          </Row>
+          <Row>
+            <Col sm={12}></Col>
           </Row>
           <div style={{ paddingTop: '-2rem', paddingBottom: '5rem' }} className="back-to-top-dark">
             <Fade top duration={1000} delay={300} distance="30px">

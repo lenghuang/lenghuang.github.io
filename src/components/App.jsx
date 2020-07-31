@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Alert } from 'react-bootstrap';
+import MyNav from './Nav';
 import Hero from './Hero';
 import About from './About';
 import What from './What';
@@ -32,6 +34,10 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, what, when, projects, footer }}>
+      <Alert variant="warning">
+        This website is still under construction. View on desktop for the best experience.
+      </Alert>
+      {/* <MyNav /> */}
       <Hero />
       <About />
       <What />

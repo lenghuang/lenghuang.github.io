@@ -24,6 +24,14 @@ export default () => {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={preview} />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+          rel="stylesheet"
+        ></link>
       </Helmet>
       <App />
     </>

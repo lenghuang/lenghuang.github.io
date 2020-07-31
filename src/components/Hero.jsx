@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Container, Row, Col, Alert } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import typing from '../images/typing.gif';
@@ -22,13 +22,25 @@ const Header = () => {
     }
   }, []);
 
+  const makeButtons = () => {
+    return (
+      <div className="hero-cta">
+        {cta &&
+          cta.map((c) => (
+            <div key={c.name} style={{ paddingRight: '2rem' }}>
+              <span className="cta-btn cta-btn--hero">
+                <Link to={c.name.toLowerCase()} smooth duration={1000} offset={c.offset || 0}>
+                  {c.name}
+                </Link>
+              </span>
+            </div>
+          ))}
+      </div>
+    );
+  };
+
   return (
     <div>
-      <div style={{ marginBottom: '-5rem', fontSize: '1.5rem' }}>
-        <Alert variant="warning">
-          This website is still under construction. View on desktop for the best experience.
-        </Alert>
-      </div>
       <section id="hero" className="jumbotron">
         <Container>
           <Row>
@@ -41,24 +53,14 @@ const Header = () => {
               </Fade>
             </Col>
             <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={250} distance="30px">
-              <Col sm={0} md={0} lg={4}>
+              <Col sm={12} md={12} lg={4}>
                 <img src={typing} alt="Len Huang Typing" />
               </Col>
             </Fade>
           </Row>
+
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-            <div className="hero-cta">
-              {cta &&
-                cta.map((c) => (
-                  <div key={c.name} style={{ paddingRight: '2rem' }}>
-                    <span className="cta-btn cta-btn--hero">
-                      <Link to={c.name.toLowerCase()} smooth duration={1000} offset={c.offset || 0}>
-                        {c.name}
-                      </Link>
-                    </span>
-                  </div>
-                ))}
-            </div>
+            {makeButtons()}
           </Fade>
         </Container>
       </section>
