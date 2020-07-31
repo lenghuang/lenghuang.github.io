@@ -19,11 +19,11 @@ export const heroData = {
   name: 'Len Huang',
   subtitle: 'and this is my story.',
   cta: [
-    { name: 'Who', to: '', id: nanoid() },
-    { name: 'What', to: 'what', id: nanoid() },
-    { name: 'When', to: 'when', offset: 82, id: nanoid() },
-    { name: 'Where', to: 'where', offset: 82, id: nanoid() },
-    { name: 'Why', to: 'why', id: nanoid() },
+    { name: 'Home', to: '', id: nanoid() },
+    { name: 'About', to: 'what', id: nanoid() },
+    { name: 'Experience', to: 'when', offset: 82, id: nanoid() },
+    { name: 'Projects', to: 'where', offset: 82, id: nanoid() },
+    { name: 'Contact', to: 'why', id: nanoid() },
   ],
 };
 
