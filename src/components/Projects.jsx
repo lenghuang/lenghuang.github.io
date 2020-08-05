@@ -100,8 +100,8 @@ const Projects = () => {
                         }}
                       >
                         <div style={{ width: '65rem' }} data-tilt className="thumbnail rounded">
-                          <ProjectImg alt={title} filename={img} />
-                          {/* {<img style={{ width: '65rem' }} src={img1} alt={title} />} */}
+                          {/* <ProjectImg alt={title} filename={img} /> */}
+                          <img style={{ width: '65rem' }} src={img1} alt={title} />
                         </div>
                       </Tilt>
                     </a>
