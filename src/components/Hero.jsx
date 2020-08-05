@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Alert } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import typing from '../images/typing.gif';
@@ -40,7 +40,10 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <React.Fragment>
+      <Alert variant="warning" style={{ paddingBottom: '-5vh', fontSize: '1.5rem' }}>
+        This website is still under construction. View on desktop for the best experience.
+      </Alert>
       <section id="hero" className="jumbotron">
         <Container>
           <Row>
@@ -71,7 +74,7 @@ const Header = () => {
           </Link>
         </Fade>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 
