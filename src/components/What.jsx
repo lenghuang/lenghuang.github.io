@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import { Container, Row, Col, ListGroup, Card } from 'react-bootstrap';
-import { Link } from 'react-scroll';
-import Title from './Title';
+import React, { useEffect, useState } from "react";
+import Fade from "react-reveal/Fade";
+import { Container, Row, Col, ListGroup, Card } from "react-bootstrap";
+import { Link } from "react-scroll";
+import Title from "./Title";
 
-const What = ({ data }) => {
+const What = ({ match, data }) => {
   const what = data;
-
+  console.log(match.params.id);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -32,10 +32,19 @@ const What = ({ data }) => {
                 const { id, title, content } = skills;
                 return (
                   <Col key={id} md={4} lg={3}>
-                    <Fade key={id} bottom={true} duration={1000} delay={250} distance="30px">
+                    <Fade
+                      key={id}
+                      bottom={true}
+                      duration={1000}
+                      delay={250}
+                      distance="30px"
+                    >
                       <Card>
                         <Card.Header>
-                          <h3 align="center" className="what-wrapper__text-title">
+                          <h3
+                            align="center"
+                            className="what-wrapper__text-title"
+                          >
                             {title.toUpperCase()}
                           </h3>
                         </Card.Header>
@@ -55,7 +64,10 @@ const What = ({ data }) => {
           <Row>
             <Col sm={12}></Col>
           </Row>
-          <div style={{ paddingTop: '-2rem', paddingBottom: '5rem' }} className="back-to-top-dark">
+          <div
+            style={{ paddingTop: "-2rem", paddingBottom: "5rem" }}
+            className="back-to-top-dark"
+          >
             <Fade top duration={1000} delay={300} distance="30px">
               <Link to="when" smooth duration={1000} offset={100}>
                 <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
