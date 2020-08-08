@@ -27,35 +27,30 @@ const What = () => {
       <Container>
         <div className="what-wrapper">
           <Title title="What I can do" />
-          <Row>
+          <div className="tables-row">
             {whats &&
               whats.map((skills) => {
                 const { id, title, content } = skills;
                 return (
-                  <Col key={id} md={4} lg={3}>
-                    <Fade key={id} bottom={true} duration={1000} delay={250} distance="30px">
-                      <Card>
-                        <Card.Header>
-                          <h3 align="center" className="what-wrapper__text-title">
-                            {title.toUpperCase()}
-                          </h3>
-                        </Card.Header>
-                        <ListGroup variant="flush">
-                          {content.map((s) => (
-                            <ListGroup.Item key={s}>
-                              <p className="what-wrapper__text">{s}</p>
-                            </ListGroup.Item>
-                          ))}
-                        </ListGroup>
-                      </Card>
-                    </Fade>
-                  </Col>
+                  <Fade key={id} bottom={true} duration={1000} delay={250} distance="30px">
+                    <Card>
+                      <Card.Header>
+                        <h3 align="center" className="what-wrapper__text-title">
+                          {title.toUpperCase()}
+                        </h3>
+                      </Card.Header>
+                      <ListGroup variant="flush">
+                        {content.map((s) => (
+                          <ListGroup.Item key={s}>
+                            <p className="what-wrapper__text">{s}</p>
+                          </ListGroup.Item>
+                        ))}
+                      </ListGroup>
+                    </Card>
+                  </Fade>
                 );
               })}
-          </Row>
-          <Row>
-            <Col sm={12}></Col>
-          </Row>
+          </div>
           <div style={{ paddingTop: '-2rem', paddingBottom: '5rem' }} className="back-to-top-dark">
             <Fade top duration={1000} delay={300} distance="30px">
               <Link to="when" smooth duration={1000} offset={100}>

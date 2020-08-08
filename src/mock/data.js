@@ -46,8 +46,18 @@ export const aboutData = {
 export const whatData = [
   {
     id: nanoid(),
-    title: 'Languages',
-    content: ['Python', 'C', 'Java', 'SMLNJ', 'Javascript', 'Terraform', 'HTML/CSS'],
+    title: 'AWS',
+    content: ['S3 Storage', 'DynamoDB', 'Lambda', 'ALB', 'Route 53'],
+  },
+  {
+    id: nanoid(),
+    title: 'GCP',
+    content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
+  },
+  {
+    id: nanoid(),
+    title: 'Data Science',
+    content: ['PyTorch', 'scikit-Learn', 'Pandas', 'Jupyter'],
   },
   {
     id: nanoid(),
@@ -56,18 +66,8 @@ export const whatData = [
   },
   {
     id: nanoid(),
-    title: 'AWS',
-    content: ['S3 Storage', 'DynamoDB', 'Lambda', 'ALB', 'Route 53'],
-  },
-  {
-    id: nanoid(),
-    title: 'Google Cloud',
-    content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
-  },
-  {
-    id: nanoid(),
-    title: 'Data Science',
-    content: ['PyTorch', 'scikit-Learn', 'Pandas', 'Jupyter'],
+    title: 'Languages',
+    content: ['Python', 'C', 'Java', 'SMLNJ', 'Javascript', 'Terraform', 'HTML/CSS'],
   },
 ];
 
