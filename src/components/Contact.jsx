@@ -35,11 +35,11 @@ const Contact = () => {
   return (
     <section id="why">
       <Container>
-        <Fade top duration={1000} delay={100} distance="30px">
+        <Fade top duration={500} delay={100} distance="30px">
           <img style={{ width: '10rem' }} src={hello} alt="Len Huang hello reach out to me" />
         </Fade>
         <Title title="why we should connect" />
-        <Fade bottom duration={1000} delay={200} distance="30px">
+        <Fade bottom duration={500} delay={110} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
               Thanks for reading through my story and learning more about my background. This has

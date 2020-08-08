@@ -4,6 +4,9 @@ import profile from '../images/profile.jpg';
 import banner from '../images/banner.png';
 import cmuimage from '../images/cmuimage.png';
 
+const resume =
+  'https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len_Resume.pdf?alt=media&token=20802879-882d-437c-b69b-f8a4e71c54b7';
+
 // HEAD DATA
 export const headData = {
   title: 'Len Huang', // e.g: 'Name | Developer'
@@ -37,8 +40,7 @@ export const aboutData = {
     'The next summer, I found myself studying computer science at Carnegie Mellon University. Here, I would make life-long friendships, challenge myself academically like never before, and channel my creativity through projects.',
   paragraphThree:
     "This website is my personal story. I've told you who I am. Now let me tell you what I can do, when I've done these things, where I've done them, and finally why we should connect.",
-  resume:
-    'https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len_Resume.pdf?alt=media&token=e31b9257-cdd6-49d1-b270-bb35d2318037', // if no resume, the button will not show up
+  resume,
 };
 // Node.js, React, Redux, Gatsby, PyTorch, scikit-Learn, Pandas, Jupyter, Git, Jenkins
 
@@ -156,8 +158,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'files-o',
-      url:
-        'https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len_Resume.pdf?alt=media&token=e31b9257-cdd6-49d1-b270-bb35d2318037',
+      url: resume,
     },
   ],
 };

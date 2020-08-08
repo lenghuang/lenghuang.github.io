@@ -32,7 +32,7 @@ const What = () => {
               whats.map((skills) => {
                 const { id, title, content } = skills;
                 return (
-                  <Fade key={id} bottom={true} duration={1000} delay={250} distance="30px">
+                  <Fade key={id} bottom={true} duration={500} delay={250} distance="30px">
                     <Card>
                       <Card.Header>
                         <h3 align="center" className="what-wrapper__text-title">
@@ -52,7 +52,7 @@ const What = () => {
               })}
           </div>
           <div style={{ paddingTop: '-2rem', paddingBottom: '5rem' }} className="back-to-top-dark">
-            <Fade top duration={1000} delay={300} distance="30px">
+            <Fade top duration={500} delay={300} distance="30px">
               <Link to="when" smooth duration={1000} offset={100}>
                 <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
               </Link>
