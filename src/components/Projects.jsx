@@ -89,7 +89,7 @@ const Projects = () => {
                     >
                       <div className="thumbnail rounded">
                         {/* <ProjectImg alt={title} filename={img} /> */}
-                        <img src={img} alt={title} />
+                        <img src={img1} alt={title} />
                       </div>
                     </a>
                   </div>
