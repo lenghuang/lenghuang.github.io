@@ -87,10 +87,10 @@ const Projects = () => {
                       aria-label="Project Link"
                       rel="noopener noreferrer"
                     >
-                      <div className="thumbnail rounded">
-                        {/* <ProjectImg alt={title} filename={img} /> */}
-                        <img src={img1} alt={title} />
-                      </div>
+                      {/* <div className="thumbnail rounded">
+                        <ProjectImg alt={title} filename={img} />
+                      </div> */}
+                      <img className="thumbnail rounded" src={img1} alt={title} />
                     </a>
                   </div>
                 </Fade>
