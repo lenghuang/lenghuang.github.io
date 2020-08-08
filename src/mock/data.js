@@ -45,33 +45,36 @@ export const aboutData = {
 // Node.js, React, Redux, Gatsby, PyTorch, scikit-Learn, Pandas, Jupyter, Git, Jenkins
 
 // WHAT I CAN DO DATA
-export const whatData = [
-  {
-    id: nanoid(),
-    title: 'AWS',
-    content: ['S3 Storage', 'DynamoDB', 'Lambda', 'ALB', 'Route 53'],
-  },
-  {
-    id: nanoid(),
-    title: 'GCP',
-    content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
-  },
-  {
-    id: nanoid(),
-    title: 'Data Science',
-    content: ['PyTorch', 'scikit-Learn', 'Pandas', 'Jupyter'],
-  },
-  {
-    id: nanoid(),
-    title: 'Frameworks',
-    content: ['React', 'Redux', 'Express', 'JenkinsCI'],
-  },
-  {
-    id: nanoid(),
-    title: 'Languages',
-    content: ['Python', 'C', 'Java', 'SMLNJ', 'Javascript', 'Terraform', 'HTML/CSS'],
-  },
-];
+export const whatData = {
+  resume,
+  tables: [
+    {
+      id: nanoid(),
+      title: 'AWS',
+      content: ['S3 Storage', 'DynamoDB', 'Lambda', 'ALB', 'Route 53'],
+    },
+    {
+      id: nanoid(),
+      title: 'GCP',
+      content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
+    },
+    {
+      id: nanoid(),
+      title: 'Full-Stack',
+      content: ['React', 'Redux', 'Express', 'JenkinsCI', 'Terraform'],
+    },
+    {
+      id: nanoid(),
+      title: 'Data Science',
+      content: ['PyTorch', 'scikit-Learn', 'Pandas', 'Jupyter'],
+    },
+    {
+      id: nanoid(),
+      title: 'Languages',
+      content: ['Python', 'C', 'Java', 'SMLNJ', 'Javascript', 'HTML/CSS'],
+    },
+  ],
+};
 
 // WHEN HAVE I DONE THIS DATA
 export const whenData = [

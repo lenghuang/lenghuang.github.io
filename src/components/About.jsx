@@ -38,7 +38,7 @@ const About = () => {
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={500} delay={200} distance="30px">
-              <div className="about-wrapper__info">
+              <div className="about-wrapper__info" id="about-resume-btn">
                 <p className="about-wrapper__info-text">{paragraphOne}</p>
                 <p className="about-wrapper__info-text">{paragraphTwo}</p>
                 <p className="about-wrapper__info-text">{paragraphThree}</p>
@@ -58,14 +58,14 @@ const About = () => {
             </Fade>
           </Col>
         </Row>
+        <div style={{ paddingTop: '2rem' }} className="back-to-top">
+          <Fade top duration={500} delay={250} distance="30px">
+            <Link to="what" smooth duration={1000}>
+              <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+            </Link>
+          </Fade>
+        </div>
       </Container>
-      <div style={{ paddingTop: '5rem' }} className="back-to-top">
-        <Fade top duration={500} delay={250} distance="30px">
-          <Link to="what" smooth duration={1000}>
-            <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
-          </Link>
-        </Fade>
-      </div>
     </section>
   );
 };

@@ -52,6 +52,14 @@ const When = () => {
     <section id="when">
       <Container>
         <Title title="When Have I Done this" />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-btn cta-btn--resume"
+          href="https://linkedin.com/in/len-huang"
+        >
+          View more on LinkedIn
+        </a>
         <Fade bottom duration={500} delay={150} distance="30px">
           <div className="when-wrapper">
             <div className="blurb when-wrapper__text">

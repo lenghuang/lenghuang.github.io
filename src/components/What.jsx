@@ -7,6 +7,7 @@ import Title from './Title';
 
 const What = () => {
   const { what } = useContext(PortfolioContext);
+  const { resume, tables } = what;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -20,34 +21,45 @@ const What = () => {
       setIsDesktop(false);
     }
   }, []);
-
-  const whats = Object.values(what);
+  const whats = tables;
   return (
     <section id="what">
       <Container>
         <div className="what-wrapper">
           <Title title="What I can do" />
+          <div style={{ marginTop: '-1rem', marginBottom: '5rem' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-btn cta-btn--hero"
+              href="https://www.notion.so/My-Projects-812fbd0d64b448d2a0742703a7434deb"
+            >
+              See where I apply these skills
+            </a>
+          </div>
           <div className="tables-row">
             {whats &&
               whats.map((skills) => {
                 const { id, title, content } = skills;
                 return (
-                  <Fade key={id} bottom={true} duration={500} delay={250} distance="30px">
-                    <Card>
-                      <Card.Header>
-                        <h3 align="center" className="what-wrapper__text-title">
-                          {title.toUpperCase()}
-                        </h3>
-                      </Card.Header>
-                      <ListGroup variant="flush">
-                        {content.map((s) => (
-                          <ListGroup.Item key={s}>
-                            <p className="what-wrapper__text">{s}</p>
-                          </ListGroup.Item>
-                        ))}
-                      </ListGroup>
-                    </Card>
-                  </Fade>
+                  <div key={id} className="card-spacing">
+                    <Fade bottom={true} duration={500} delay={250} distance="30px">
+                      <Card>
+                        <Card.Header>
+                          <h3 align="center" className="what-wrapper__text-title">
+                            {title.toUpperCase()}
+                          </h3>
+                        </Card.Header>
+                        <ListGroup variant="flush">
+                          {content.map((s) => (
+                            <ListGroup.Item key={s}>
+                              <p className="what-wrapper__text">{s}</p>
+                            </ListGroup.Item>
+                          ))}
+                        </ListGroup>
+                      </Card>
+                    </Fade>
+                  </div>
                 );
               })}
           </div>

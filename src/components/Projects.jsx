@@ -35,7 +35,7 @@ const Projects = () => {
               className="cta-btn cta-btn--hero"
               href="https://www.notion.so/My-Projects-812fbd0d64b448d2a0742703a7434deb"
             >
-              VIEW ALL PROJECTS HERE
+              View all projects here
             </a>
           </div>
           {projects.map((project, i) => {
@@ -96,7 +96,7 @@ const Projects = () => {
                       aria-label="Project Link"
                       rel="noopener noreferrer"
                     >
-                      <div style={{ width: '65rem' }} data-tilt className="thumbnail rounded">
+                      <div className="thumbnail rounded">
                         <ProjectImg alt={title} filename={img} />
                         {/* <img style={{ width: '65rem' }} src={img1} alt={title} /> */}
                       </div>
