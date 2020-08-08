@@ -2,26 +2,29 @@ import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import hello from '../images/hello.gif';
 import { Link } from 'react-scroll';
-import { Container } from 'react-bootstrap';
+import { Container, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
 import Title from './Title';
+
+const renderTooltip = (message) => <Tooltip style={{ fontSize: '1.5rem' }}>{message}</Tooltip>;
 
 const SocialStuff = ({ networks }) => {
   return (
     <div className="social-links">
       {networks &&
         networks.map((network) => {
-          const { id, name, url } = network;
+          const { id, name, url, title } = network;
           return (
-            <a
+            <OverlayTrigger
               key={id}
-              href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
-              rel="noopener noreferrer"
-              target="_blank"
-              aria-label={name}
+              placement="bottom"
+              delay={{ show: 100, hide: 300 }}
+              overlay={renderTooltip(title)}
             >
-              <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
-            </a>
+              <a href={url} rel="noopener noreferrer" target="_blank" aria-label={name}>
+                <i className={`fa fa-${name} fa-inverse`} />
+              </a>
+            </OverlayTrigger>
           );
         })}
     </div>

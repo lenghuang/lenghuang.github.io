@@ -28,18 +28,20 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Where to see" />
-          <div style={{ marginTop: '-1rem', marginBottom: '5rem' }}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--hero"
-              href="https://www.notion.so/My-Projects-812fbd0d64b448d2a0742703a7434deb"
-            >
-              View all projects here
-            </a>
-          </div>
+          <Fade bottom duration={500} delay={200} distance="30px">
+            <div style={{ marginTop: '-1rem', marginBottom: '5rem' }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-btn cta-btn--hero"
+                href="https://www.notion.so/My-Projects-812fbd0d64b448d2a0742703a7434deb"
+              >
+                View all projects here
+              </a>
+            </div>
+          </Fade>
           {projects.map((project, i) => {
-            const { title, info, info2, url, repo, img, img1, id } = project;
+            const { title, info, info2, url, img, id } = project;
             const projDesc = (left, right) => (
               <Col lg={4} sm={12} key={`desc${id}`}>
                 <Fade
@@ -62,19 +64,8 @@ const Projects = () => {
                       className="cta-btn cta-btn--hero"
                       href={url || '#!'}
                     >
-                      See Live
+                      Read More
                     </a>
-
-                    {repo && (
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn text-color-main"
-                        href={repo}
-                      >
-                        Source Code
-                      </a>
-                    )}
                   </div>
                 </Fade>
               </Col>

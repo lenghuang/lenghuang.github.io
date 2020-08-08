@@ -41,9 +41,9 @@ const Header = () => {
 
   return (
     <React.Fragment>
-      <Alert variant="warning" style={{ paddingBottom: '-5vh', fontSize: '1.5rem' }}>
+      {/* <Alert variant="warning" style={{ paddingBottom: '-5vh', fontSize: '1.5rem' }}>
         This website is still under construction. View on desktop for the best experience.
-      </Alert>
+      </Alert> */}
       <section id="hero" className="jumbotron">
         <Container>
           <Row>

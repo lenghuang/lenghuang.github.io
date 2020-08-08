@@ -27,16 +27,18 @@ const What = () => {
       <Container>
         <div className="what-wrapper">
           <Title title="What I can do" />
-          <div style={{ marginTop: '-1rem', marginBottom: '5rem' }}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--hero"
-              href="https://www.notion.so/My-Projects-812fbd0d64b448d2a0742703a7434deb"
-            >
-              See where I apply these skills
-            </a>
-          </div>
+          <Fade bottom duration={500} delay={250} distance="30px">
+            <div style={{ marginTop: '-1rem', marginBottom: '5rem' }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-btn cta-btn--hero"
+                href="https://www.notion.so/My-Projects-812fbd0d64b448d2a0742703a7434deb"
+              >
+                See where I apply these skills
+              </a>
+            </div>
+          </Fade>
           <div className="tables-row">
             {whats &&
               whats.map((skills) => {
