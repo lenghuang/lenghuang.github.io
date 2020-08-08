@@ -41,7 +41,7 @@ const Projects = () => {
             </div>
           </Fade>
           {projects.map((project, i) => {
-            const { title, info, info2, url, img, id } = project;
+            const { title, info, info2, url, img, img1, id } = project;
             const projDesc = (left, right) => (
               <Col lg={4} sm={12} key={`desc${id}`}>
                 <Fade
@@ -88,8 +88,8 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <div className="thumbnail rounded">
-                        <ProjectImg alt={title} filename={img} />
-                        {/* <img style={{ width: '65rem' }} src={img1} alt={title} /> */}
+                        {/* <ProjectImg alt={title} filename={img} /> */}
+                        <img src={img} alt={title} />
                       </div>
                     </a>
                   </div>
