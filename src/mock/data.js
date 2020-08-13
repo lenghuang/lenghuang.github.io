@@ -24,11 +24,11 @@ export const heroData = {
   name: 'Len Huang',
   subtitle: 'and this is my story.',
   cta: [
-    { name: 'Who' },
-    { name: 'What' },
-    { name: 'When', offset: 82 },
-    { name: 'Where', offset: 82 },
-    { name: 'Why' },
+    { name: 'Who', duration: 800 },
+    { name: 'What', duration: 1000 },
+    { name: 'When', duration: 1100 },
+    { name: 'Where', duration: 1200 },
+    { name: 'Why', duration: 1500 },
   ],
 };
 

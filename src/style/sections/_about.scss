@@ -4,9 +4,9 @@
   color: $white-color;
   height: 100%;
   border-top: 0;
+  padding-bottom: calc(2rem + 5vh);
   // -webkit-clip-path: polygon(0 0, 100% 0, 100% $section-angle-op, 0 100%);
   // clip-path: polygon(0 0, 100% 0, 100% $section-angle-op, 0 100%);
-
   @media only screen and (max-width: 768px) {
     #about-resume-btn {
       text-align: center !important;

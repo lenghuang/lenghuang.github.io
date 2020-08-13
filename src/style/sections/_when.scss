@@ -7,9 +7,10 @@
   // -webkit-clip-path: polygon(0 0, 100% $section-angle, 100% 100%, 0 100%);
   // clip-path: polygon(0 0, 100% $section-angle, 100% 100%, 0 100%);
 
-  padding: 15rem 0 10rem;
-  margin-top: -10rem;
-  margin-bottom: 10rem;
+  // padding: 15rem 0 10rem;
+  // margin-top: -10rem;
+  padding-bottom: 10rem;
+  margin-bottom: 15rem;
   color: $white-color;
 
   @include respond(tab-land) {

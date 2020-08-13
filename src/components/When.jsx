@@ -81,15 +81,14 @@ const When = () => {
               </Fade>
             );
           })}{' '}
-        <Row id="when-last-row"></Row>
-        <div className="back-to-top">
+        {/* <div className="back-to-top">
           <Fade top duration={500} delay={150} distance="30px">
             <Link to="where" smooth duration={1000} offset={70}>
               <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
             </Link>
           </Fade>
-        </div>
-        <Row id="when-last-row"></Row>
+        </div> */}
+        {/* <Row id="when-last-row"></Row> */}
       </Container>
     </section>
   );

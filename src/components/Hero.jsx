@@ -29,7 +29,7 @@ const Header = () => {
           cta.map((c) => (
             <div key={c.name} style={{ padding: '1rem' }}>
               <span className="cta-btn cta-btn--hero">
-                <Link to={c.name.toLowerCase()} smooth duration={1000} offset={c.offset || 0}>
+                <Link to={c.name.toLowerCase()} smooth duration={c.duration || 1000}>
                   {c.name}
                 </Link>
               </span>
