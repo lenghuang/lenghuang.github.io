@@ -4,6 +4,11 @@ import profile from '../images/profile.jpg';
 import banner from '../images/banner.png';
 import cmuimage from '../images/cmuimage.png';
 
+const resume =
+  'https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len_Resume.pdf?alt=media&token=20802879-882d-437c-b69b-f8a4e71c54b7';
+
+const notion = 'https://www.notion.so/My-Projects-812fbd0d64b448d2a0742703a7434deb';
+
 // HEAD DATA
 export const headData = {
   title: 'Len Huang', // e.g: 'Name | Developer'
@@ -32,44 +37,45 @@ export const aboutData = {
   img: 'profile.jpg',
   img1: profile,
   paragraphOne:
-    'I was born and raised in Holmdel, New Jersey. Having graduated from high school in 2019, I began moving past my days of athletics / advocacy and started looking to find my place in the world.',
-  paragraphTwo:
-    'The next summer, I found myself studying computer science at Carnegie Mellon University. Here, I would make life-long friendships, challenge myself academically like never before, and channel my creativity through projects.',
-  paragraphThree:
-    "This website is my personal story. I've told you who I am. Now let me tell you what I can do, when I've done these things, where I've done them, and finally why we should connect.",
-  resume:
-    'https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len_Resume.pdf?alt=media&token=e31b9257-cdd6-49d1-b270-bb35d2318037', // if no resume, the button will not show up
+    "I started my journey in Holmdel, NJ, ventured off to Pittsburgh, PA, and am now seeking my next stop. My goal is to create products that bring value to PEOPLE. Whether it's creating my own e-learning platform (MLforALL), or working to reimagine banking at Capital One, I code to bring value to people.",
+  paragraphTwo: "This website is my personal story. I'd love for you to stick around!",
+  paragraphThree: '',
+  resume,
+  notion,
 };
 // Node.js, React, Redux, Gatsby, PyTorch, scikit-Learn, Pandas, Jupyter, Git, Jenkins
 
 // WHAT I CAN DO DATA
-export const whatData = [
-  {
-    id: nanoid(),
-    title: 'Languages',
-    content: ['Python', 'C', 'Java', 'SMLNJ', 'Javascript', 'Terraform', 'HTML/CSS'],
-  },
-  {
-    id: nanoid(),
-    title: 'Frameworks',
-    content: ['React', 'Redux', 'Express', 'JenkinsCI'],
-  },
-  {
-    id: nanoid(),
-    title: 'AWS',
-    content: ['S3 Storage', 'DynamoDB', 'Lambda', 'ALB', 'Route 53'],
-  },
-  {
-    id: nanoid(),
-    title: 'Google Cloud',
-    content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
-  },
-  {
-    id: nanoid(),
-    title: 'Data Science',
-    content: ['PyTorch', 'scikit-Learn', 'Pandas', 'Jupyter'],
-  },
-];
+export const whatData = {
+  resume,
+  tables: [
+    {
+      id: nanoid(),
+      title: 'AWS',
+      content: ['S3 Storage', 'DynamoDB', 'Lambda', 'ALB', 'Route 53'],
+    },
+    {
+      id: nanoid(),
+      title: 'GCP',
+      content: ['Storage', 'Run', 'Firestore', 'Authentication', 'Functions'],
+    },
+    {
+      id: nanoid(),
+      title: 'Full-Stack',
+      content: ['React', 'Redux', 'Express', 'JenkinsCI', 'Terraform'],
+    },
+    {
+      id: nanoid(),
+      title: 'Data Science',
+      content: ['PyTorch', 'scikit-Learn', 'Pandas', 'Jupyter'],
+    },
+    {
+      id: nanoid(),
+      title: 'Languages',
+      content: ['Python', 'C', 'Java', 'SMLNJ', 'Javascript', 'HTML/CSS'],
+    },
+  ],
+};
 
 // WHEN HAVE I DONE THIS DATA
 export const whenData = [
@@ -123,7 +129,7 @@ export const projectsData = [
       'MLforALL guides you in learning about and experimenting with machine learning without coding experience. This is done by providing an accessible all-in-one platform for machine learning education.',
     info2:
       'Our tech stack includes a React-Redux front end, Google Cloud back end, and a Flask RestAPI that utilizes Sklearn and Pandas.',
-    url: 'https://www.pralent.com/projects/1439dd81-55de-4b08-a58b-8a4555145890',
+    url: 'https://www.notion.so/MLforALL-5bba9ba722ad44a29951b9a42fd74d31',
     repo: 'https://github.com/mlforall-app/mlforall', // if no repo, the button will not show up
   },
   {
@@ -135,7 +141,7 @@ export const projectsData = [
       'Our academic advisor wanted to foster community during quaratine by having us email her photos everyday. To streamline this process, I created this web app that allows anyone to upload photos and have it update for everyone in realtime.',
     info2:
       'I challenged myself by learning React/Firebase and finishing this project within the span of four days in order to deploy this platform in a timely manner.',
-    url: 'https://lenghuang.github.io/cmu-imageshare/',
+    url: 'https://www.notion.so/CMU-Image-Share-44ef40edc799450caccbb06fc40899f5',
     repo: 'https://github.com/lenghuang/cmu-imageshare', // if no repo, the button will not show up
   },
 ];
@@ -145,19 +151,27 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
+      title: 'Connect on LinkedIn',
       name: 'linkedin',
       url: 'https://www.linkedin.com/in/len-huang',
     },
     {
       id: nanoid(),
+      title: 'See my Contributions',
       name: 'github',
       url: 'https://github.com/lenghuang',
     },
     {
       id: nanoid(),
+      title: 'View My Resume',
       name: 'files-o',
-      url:
-        'https://firebasestorage.googleapis.com/v0/b/sushi-7c58c.appspot.com/o/default%2FHuang_Len_Resume.pdf?alt=media&token=e31b9257-cdd6-49d1-b270-bb35d2318037',
+      url: resume,
+    },
+    {
+      id: nanoid(),
+      title: 'See Projects on Notion',
+      name: 'laptop',
+      url: notion,
     },
   ],
 };

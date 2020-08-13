@@ -7,6 +7,7 @@ import Title from './Title';
 
 const What = () => {
   const { what } = useContext(PortfolioContext);
+  const { resume, tables } = what;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -20,20 +21,31 @@ const What = () => {
       setIsDesktop(false);
     }
   }, []);
-
-  const whats = Object.values(what);
+  const whats = tables;
   return (
     <section id="what">
       <Container>
         <div className="what-wrapper">
           <Title title="What I can do" />
-          <Row>
+          <Fade bottom duration={500} delay={250} distance="30px">
+            <div style={{ marginTop: '-1rem', marginBottom: '5rem' }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-btn cta-btn--hero"
+                href="https://www.notion.so/My-Projects-812fbd0d64b448d2a0742703a7434deb"
+              >
+                See where I apply these skills
+              </a>
+            </div>
+          </Fade>
+          <div className="tables-row">
             {whats &&
               whats.map((skills) => {
                 const { id, title, content } = skills;
                 return (
-                  <Col key={id} md={4} lg={3}>
-                    <Fade key={id} bottom={true} duration={1000} delay={250} distance="30px">
+                  <div key={id} className="card-spacing">
+                    <Fade bottom={true} duration={500} delay={250} distance="30px">
                       <Card>
                         <Card.Header>
                           <h3 align="center" className="what-wrapper__text-title">
@@ -49,15 +61,12 @@ const What = () => {
                         </ListGroup>
                       </Card>
                     </Fade>
-                  </Col>
+                  </div>
                 );
               })}
-          </Row>
-          <Row>
-            <Col sm={12}></Col>
-          </Row>
+          </div>
           <div style={{ paddingTop: '-2rem', paddingBottom: '5rem' }} className="back-to-top-dark">
-            <Fade top duration={1000} delay={300} distance="30px">
+            <Fade top duration={500} delay={300} distance="30px">
               <Link to="when" smooth duration={1000} offset={100}>
                 <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
               </Link>

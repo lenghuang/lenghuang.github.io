@@ -23,23 +23,9 @@ const makeCol = (w) => {
   return (
     <React.Fragment>
       <Col className="when-wrapper__center" sm={4} lg={2}>
-        <Tilt
-          options={{
-            reverse: false,
-            max: 15,
-            perspective: 1000,
-            scale: 1,
-            speed: 300,
-            transition: true,
-            axis: null,
-            reset: true,
-            easing: 'cubic-bezier(.03,.98,.52,.99)',
-          }}
-        >
-          <div data-tilt className="thumbnail rounded">
-            <img className="when-wrapper__logo" src={w.img} alt={w.company} />
-          </div>
-        </Tilt>
+        <div data-tilt className="thumbnail rounded">
+          <img className="when-wrapper__logo" src={w.img} alt={w.company} />
+        </div>
       </Col>
       <Col sm={8} lg={4}>
         <p className="when-wrapper__text-title">
@@ -66,7 +52,17 @@ const When = () => {
     <section id="when">
       <Container>
         <Title title="When Have I Done this" />
-        <Fade bottom duration={1000} delay={200} distance="30px">
+        <Fade bottom duration={500} delay={150} distance="30px">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-btn cta-btn--resume"
+            href="https://linkedin.com/in/len-huang"
+          >
+            View more on LinkedIn
+          </a>
+        </Fade>
+        <Fade bottom duration={500} delay={200} distance="30px">
           <div className="when-wrapper">
             <div className="blurb when-wrapper__text">
               A lot of these skills I've gathered from learning at internships, teaching classmates,
@@ -77,7 +73,7 @@ const When = () => {
         {whens &&
           whens.map(([x, y], i) => {
             return (
-              <Fade key={x.id} bottom duration={1000} delay={300 + i * 100} distance="30px">
+              <Fade key={x.id} bottom duration={500} delay={200 + i * 50} distance="30px">
                 <Row>
                   {makeCol(x)}
                   {y && makeCol(y)}
@@ -87,7 +83,7 @@ const When = () => {
           })}{' '}
         <Row id="when-last-row"></Row>
         <div className="back-to-top">
-          <Fade top duration={1000} delay={500} distance="30px">
+          <Fade top duration={500} delay={150} distance="30px">
             <Link to="where" smooth duration={1000} offset={70}>
               <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
             </Link>

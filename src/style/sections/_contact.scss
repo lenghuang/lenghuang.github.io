@@ -1,7 +1,7 @@
 #why {
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  -webkit-clip-path: polygon(0 0, 100% $section-angle, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% $section-angle, 100% 100%, 0 100%);
+  // -webkit-clip-path: polygon(0 0, 100% $section-angle, 100% 100%, 0 100%);
+  // clip-path: polygon(0 0, 100% $section-angle, 100% 100%, 0 100%);
   padding: 15rem 0 10rem;
   margin-top: -15rem;
   margin-bottom: -1px;

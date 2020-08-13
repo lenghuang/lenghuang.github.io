@@ -1,8 +1,8 @@
 #what {
   background-color: $white-color;
   color: $dark-blue-text;
-  margin-top: -5rem;
-  padding-top: 12rem;
+  // margin-top: -5rem;
+  // padding-top: 12rem;
   margin-bottom: -18rem;
   padding-bottom: 2rem;
 
@@ -13,6 +13,11 @@
 
   .card {
     margin-bottom: 2rem;
+    width: 20rem;
+  }
+
+  .card-spacing {
+    padding: 1rem;
   }
 
   .what-wrapper {
@@ -20,6 +25,13 @@
 
     @include respond(phone) {
       margin-bottom: 0;
+    }
+
+    .tables-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
     }
 
     .row {

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
+
 import { Link } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
@@ -28,16 +28,28 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Where to see" />
+          <Fade bottom duration={500} delay={200} distance="30px">
+            <div style={{ marginTop: '-1rem', marginBottom: '5rem' }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-btn cta-btn--hero"
+                href="https://www.notion.so/My-Projects-812fbd0d64b448d2a0742703a7434deb"
+              >
+                View all projects here
+              </a>
+            </div>
+          </Fade>
           {projects.map((project, i) => {
-            const { title, info, info2, url, repo, img, img1, id } = project;
+            const { title, info, info2, url, img, img1, id } = project;
             const projDesc = (left, right) => (
               <Col lg={4} sm={12} key={`desc${id}`}>
                 <Fade
                   left={left}
                   right={right}
                   bottom={isMobile}
-                  duration={1000}
-                  delay={250}
+                  duration={500}
+                  delay={200}
                   distance="30px"
                 >
                   <div className="project-wrapper__text">
@@ -52,19 +64,8 @@ const Projects = () => {
                       className="cta-btn cta-btn--hero"
                       href={url || '#!'}
                     >
-                      See Live
+                      Read More
                     </a>
-
-                    {repo && (
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn text-color-main"
-                        href={repo}
-                      >
-                        Source Code
-                      </a>
-                    )}
                   </div>
                 </Fade>
               </Col>
@@ -75,8 +76,8 @@ const Projects = () => {
                   left={left}
                   right={right}
                   bottom={isMobile}
-                  duration={1000}
-                  delay={500}
+                  duration={500}
+                  delay={250}
                   distance="30px"
                 >
                   <div className="project-wrapper__image">
@@ -86,24 +87,10 @@ const Projects = () => {
                       aria-label="Project Link"
                       rel="noopener noreferrer"
                     >
-                      <Tilt
-                        options={{
-                          reverse: false,
-                          max: 5,
-                          perspective: 1000,
-                          scale: 1,
-                          speed: 300,
-                          transition: true,
-                          axis: null,
-                          reset: true,
-                          easing: 'cubic-bezier(.03,.98,.52,.99)',
-                        }}
-                      >
-                        <div style={{ width: '65rem' }} data-tilt className="thumbnail rounded">
-                          <ProjectImg alt={title} filename={img} />
-                          {/* {<img style={{ width: '65rem' }} src={img1} alt={title} />} */}
-                        </div>
-                      </Tilt>
+                      {/* <div className="thumbnail rounded">
+                        <ProjectImg alt={title} filename={img} />
+                      </div> */}
+                      <img className="thumbnail rounded" src={img1} alt={title} />
                     </a>
                   </div>
                 </Fade>
@@ -120,11 +107,9 @@ const Projects = () => {
             );
           })}
           <div className="back-to-top-dark">
-            <Fade top duration={1000} delay={200} distance="30px">
-              <Link to="why" smooth duration={1000}>
-                <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
-              </Link>
-            </Fade>
+            <Link to="why" smooth duration={1000}>
+              <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
+            </Link>
           </div>
         </div>
       </Container>
