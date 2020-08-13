@@ -25,6 +25,11 @@
     padding-bottom: 5rem;
     text-align: center;
     color: $light-grey;
+
+    @include respond(phone) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 
   .thumbnail {

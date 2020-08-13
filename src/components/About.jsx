@@ -66,13 +66,13 @@ const About = () => {
             </Fade>
           </Col>
         </Row>
-        <div style={{ paddingTop: '2rem' }} className="back-to-top">
+        {/* <div style={{ paddingTop: '2rem' }} className="back-to-top">
           <Fade top duration={500} delay={250} distance="30px">
             <Link to="what" smooth duration={1000}>
               <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
             </Link>
           </Fade>
-        </div>
+        </div> */}
       </Container>
     </section>
   );

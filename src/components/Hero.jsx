@@ -67,13 +67,13 @@ const Header = () => {
           </Fade>
         </Container>
       </section>
-      <div style={{ marginTop: '-15rem', marginBottom: '17rem' }} className="back-to-top-dark">
+      {/* <div style={{ marginTop: '-15rem', marginBottom: '17rem' }} className="back-to-top-dark">
         <Fade top duration={750} delay={200} distance="30px">
           <Link to="who" smooth duration={1000}>
             <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
           </Link>
         </Fade>
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };

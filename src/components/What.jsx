@@ -65,13 +65,13 @@ const What = () => {
                 );
               })}
           </div>
-          <div style={{ paddingTop: '-2rem', paddingBottom: '5rem' }} className="back-to-top-dark">
+          {/* <div style={{ paddingTop: '-2rem', paddingBottom: '5rem' }} className="back-to-top-dark">
             <Fade top duration={500} delay={300} distance="30px">
               <Link to="when" smooth duration={1000} offset={100}>
                 <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
               </Link>
             </Fade>
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>

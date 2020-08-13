@@ -10,6 +10,9 @@
     margin-top: 0;
     padding-top: 5rem;
   }
+  @include respond(phone) {
+    padding-bottom: 7rem;
+  }
 
   .card {
     margin-bottom: 2rem;

@@ -106,11 +106,11 @@ const Projects = () => {
               </Row>
             );
           })}
-          <div className="back-to-top-dark">
+          {/* <div className="back-to-top-dark">
             <Link to="why" smooth duration={1000}>
               <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
             </Link>
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>
